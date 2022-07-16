@@ -1,0 +1,129 @@
+html,
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+}
+body {
+    margin: 0 4%;
+    background-image: url("/img/background.jpg");
+    background-size: 1400px 800px;
+    background-repeat: no-repeat;
+    width: 95vw;
+    height: 100vh;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+:root {
+    --blue: #3b8acf;
+    --white: #ffffff;
+    --grey: #babbbb;
+    --black: #202122;
+    --lightblue: #d3e6f4;
+}
+main {
+    background-color: var(--white);
+    width: 25rem;
+    padding: 2em;
+    position: absolute;
+    top: 13%;
+    left: 37%;
+}
+.header .hr-line {
+    content: " ";
+    width: 1.5rem;
+    background-color: var(--lightblue);
+    height: 5px;
+    font-weight: lighter;
+    position: absolute;
+    top: 95px;
+    left: 46%;
+}
+.header h1 {
+    color: var(--blue);
+    font-size: 50px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    font-weight: bolder;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+.header p {
+    margin-top: -2.5rem;
+    color: var(--grey);
+}
+.flight-number {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.flight-number .span {
+    margin-top: -1em;
+}
+.flight-number .span1,
+.passenger .span1 {
+    color: var(--grey);
+    font-size: 13px;
+}
+
+.passenger .span {
+    margin-top: -1rem;
+}
+.passenger {
+    display: flex;
+    justify-content: space-between;
+}
+.barcode img {
+    width: 150px;
+    margin-top: 0.5em;
+}
+@media screen and (max-width: 900px) {
+    main {
+        left: 20%;
+    }
+    body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+    }
+}
+@media screen and (max-width: 500px) {
+    main {
+        left: 10%;
+    }
+}
+@media screen and (max-width: 450px) {
+    main {
+        width: 20rem;
+    }
+}
+@media screen and (max-width: 449px) {
+    .barcode img {
+        width: 120px;
+        margin-top: 1.5em;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    main {
+        left: 3%;
+        width: 18rem;
+        padding: 1em;
+    }
+    .passenger .span {
+        /* font-size: 13px; */
+    }
+}
